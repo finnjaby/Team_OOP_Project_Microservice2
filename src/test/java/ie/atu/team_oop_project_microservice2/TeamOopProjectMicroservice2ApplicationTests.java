@@ -1,4 +1,4 @@
-package com.example.team_oop_project_microservice2;
+package ie.atu.team_oop_project_microservice2;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
