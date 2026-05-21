@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotBlank;
 
 @Entity
 public class SwimmerProfile {
@@ -11,7 +12,10 @@ public class SwimmerProfile {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int swimmerId;
+
+    @NotBlank(message= "Name required")
     public String name;
+    @NotBlank(message= "DOB required")
     public String dob;
     public boolean medClearance;
     public boolean memberStatus;
